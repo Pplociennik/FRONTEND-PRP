@@ -5,21 +5,21 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { TodoListComponent } from './todo-list/todo-list.component';
-import { TodoItemComponent } from './todo-item/todo-item.component';
-import { TodoService } from './service/todo.service';
-import { AddTodoComponent } from './add-todo/add-todo.component';
+import { ConsoleListComponent } from './console-list/console-list.component';
+import { ConsoleItemComponent } from './console-item/console-item.component';
+import { ConsoleService } from './service/console.service';
+import { AddConsoleComponent } from './add-console/add-console.component';
 
 const ROUTES: Routes = [
-  { path: '', redirectTo: 'todo-list', pathMatch: 'full' },
-  { path: 'todo-list', component: TodoListComponent },
-  { path: 'add-todo', component: AddTodoComponent }
+  { path: '', redirectTo: 'console-list', pathMatch: 'full' },
+  { path: 'console-list', component: ConsoleListComponent },
+  { path: 'add-console', component: AddConsoleComponent }
 ];
 
 @NgModule({
-  declarations: [AppComponent, TodoListComponent, TodoItemComponent, AddTodoComponent],
+  declarations: [AppComponent, ConsoleListComponent, ConsoleItemComponent, AddConsoleComponent],
   imports: [BrowserModule, HttpClientModule, FormsModule, RouterModule.forRoot(ROUTES)],
-  providers: [TodoService],
+  providers: [ConsoleService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

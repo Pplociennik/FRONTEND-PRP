@@ -1,4 +1,4 @@
-.todo {
+.console {
   margin: 5px 0;
   border-bottom: 1px solid lightgray;
   padding: 10px;
@@ -9,16 +9,16 @@
   width: 100%;
   margin: 0 auto;
 }
-.todo__name {
+.console__name {
   text-transform: uppercase;
   width: 60%;
   font-size: 16px;
   font-weight: 500;
 }
-.todo__name--finished {
+.console__name--finished {
   text-decoration: line-through;
 }
-.todo__btn {
+.console__btn {
   padding: 5px;
   border: none;
   margin: 5px;
@@ -26,12 +26,12 @@
   transition: 200ms;
   color: white;
 }
-.todo__btn--status {
+.console__btn--status {
   background-color: darkslategray;
 }
-.todo__btn--remove {
+.console__btn--remove {
   background-color: red;
 }
-.todo__btn:hover {
+.console__btn:hover {
   transform: translateY(-2px);
 }

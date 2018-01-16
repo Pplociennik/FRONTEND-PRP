@@ -1,0 +1,4 @@
+<div class="console-list">
+  <app-console-item *ngFor="let console_item of console" [console]="console_item" (removeItem)="removeConsole($event)">
+  </app-console-item>
+</div>

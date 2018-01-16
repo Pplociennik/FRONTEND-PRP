@@ -1,0 +1,7 @@
+<div class="console">
+  <div class="console__name" [ngClass]="{'console__name--finished' : console.isFinished() }">
+    {{ console.name }}
+  </div>
+  <button class="console__btn todo__btn--status" (click)="toggleStatus()"> PRZEŁĄCZ </button>
+  <button class="console__btn todo__btn--remove" (click)="remove()"> USUŃ </button>
+</div>

@@ -1,4 +1,4 @@
-export class Todo {
+export class Console {
   private id: number;
   private name: String;
   private finished: boolean;
