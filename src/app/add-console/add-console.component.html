@@ -1,5 +1,14 @@
 <div class="container">
+  Wydawca:
+  <input class="input" type="text" [(ngModel)]="newConsoleDeveloper">
+  Nazwa Konsoli:
     <input class="input" type="text" [(ngModel)]="newConsoleName">
+  Model Konsoli:
+  <input class="input" type="text" [(ngModel)]="newConsoleModel">
+  Wersja Konsoli:
+  <input class="input" type="text" [(ngModel)]="newConsoleVersion">
+  Data Wydania:
+  <input class="input" type="text" [(ngModel)]="newConsoleRelaseDate">
     <button class="button" (click)="createNewConsole()">
         STWÓRZ NOWĄ KONSOLĘ
     </button>

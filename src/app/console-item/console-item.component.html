@@ -1,6 +1,18 @@
 <div class="console">
   <div class="console__name" [ngClass]="{'console__name--finished' : console.isFinished() }">
+    {{ console.developer }}
+  </div>
+  <div class="console__name" [ngClass]="{'console__name--finished' : console.isFinished() }">
     {{ console.name }}
+  </div>
+  <div class="console__name" [ngClass]="{'console__name--finished' : console.isFinished() }">
+    {{ console.model }}
+  </div>
+  <div class="console__name" [ngClass]="{'console__name--finished' : console.isFinished() }">
+    {{ console.version }}
+  </div>
+  <div class="console__name" [ngClass]="{'console__name--finished' : console.isFinished() }">
+    {{ console.relase_date }}
   </div>
   <button class="console__btn todo__btn--status" (click)="toggleStatus()"> PRZEŁĄCZ </button>
   <button class="console__btn todo__btn--remove" (click)="remove()"> USUŃ </button>

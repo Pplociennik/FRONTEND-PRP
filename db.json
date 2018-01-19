@@ -1,8 +1,25 @@
 {
-  "todos": [
+  "consoles": [
     {
-      "id": 763,
-      "name": "test todo",
+      "memory": {},
+      "id": 348
+    },
+    {
+      "id": 525,
+      "name": "switch",
+      "model": "core",
+      "version": "1",
+      "developer": "nintendo",
+      "relase_date": "2017",
+      "finished": false
+    },
+    {
+      "id": 206,
+      "name": "fzczc",
+      "model": "xvxcv",
+      "version": "zxcxcb",
+      "developer": "fds",
+      "relase_date": "zxc ",
       "finished": false
     }
   ]
