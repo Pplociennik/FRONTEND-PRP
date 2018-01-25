@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import {modelGroupProvider} from '@angular/forms/src/directives/ng_model_group';
 
-const apiUrl: String = 'http://localhost:8080';
+const apiUrl: String = 'http://localhost:8080/api';
 
 @Injectable()
 export class ConsoleService {
@@ -14,24 +14,24 @@ export class ConsoleService {
     return this.http.get(`${apiUrl}/consoles`);
   }
 
-  createNewConsole(name: String, model: String, version: String, developer: String, relase_date: String) {
+  createNewConsole(consoleName: String, model: String, version: String, developer: String, relaseDate: String) {
     const data = {
-      name: name,
+      consoleName: consoleName,
       model: model,
       version: version,
       developer: developer,
-      relase_date: relase_date
+      relaseDate: relaseDate
     };
     const consoles = new Console(data);
-    return this.http.post(`${apiUrl}/consoles`, consoles).subscribe(res => {
+    return this.http.post(`${apiUrl}/console`, consoles).subscribe(res => {
       console.log(res);
     });
   }
   removeConsole(consoles: Console) {
-    return this.http.delete(`${apiUrl}/consoles/${consoles.getId()}`);
+    return this.http.delete(`${apiUrl}/console/${consoles.getId()}`);
   }
 
   updateConsole(consoles: Console) {
-    return this.http.put(`${apiUrl}/consoles/${consoles.getId()}`, console);
+    return this.http.put(`${apiUrl}/consoles/${consoles.getId()}`, consoles);
   }
 }

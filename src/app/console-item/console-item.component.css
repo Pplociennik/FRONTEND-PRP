@@ -15,6 +15,30 @@
   font-size: 16px;
   font-weight: 500;
 }
+.console__developer {
+  text-transform: uppercase;
+  width: 40%;
+  font-size: 16px;
+  font-weight: 500;
+}
+.console__model {
+  text-transform: uppercase;
+  width: 60%;
+  font-size: 16px;
+  font-weight: 500;
+}
+.console__version {
+  text-transform: uppercase;
+  width: 60%;
+  font-size: 16px;
+  font-weight: 500;
+}
+.console__relaseDate {
+  text-transform: uppercase;
+  width: 60%;
+  font-size: 16px;
+  font-weight: 500;
+}
 .console__name--finished {
   text-decoration: line-through;
 }

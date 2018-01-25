@@ -26,11 +26,7 @@ export class AddConsoleComponent implements OnInit {
   createNewConsole() {
     if (this.newConsoleName !== '') {
       this.consoleService.createNewConsole(this.newConsoleName, this.newConsoleModel, this.newConsoleVersion, this.newConsoleDeveloper, this.newConsoleRelaseDate);
-      this.newConsoleName = '';
-      this.newConsoleModel = '';
-      this.newConsoleVersion = '';
-      this.newConsoleDeveloper = '';
-      this.newConsoleRelaseDate = '';
+
     } else {
       window.alert('brak nazwy zadania');
     }

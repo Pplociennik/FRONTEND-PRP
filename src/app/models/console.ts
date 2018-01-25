@@ -1,19 +1,19 @@
 export class Console {
   private id: number;
-  private name: String;
+  private consoleName: String;
   private model: String;
   private version: String;
   private developer: String;
-  private relase_date: String;
+  private relaseDate: String;
   private finished: boolean;
 
   constructor(obj?: any) {
     this.id = (obj && obj.id) || Math.floor(Math.random() * 1000);
-    this.name = (obj && obj.name) || '';
+    this.consoleName = (obj && obj.consoleName) || '';
     this.model = (obj && obj.model) || '';
     this.version = (obj && obj.version) || '';
     this.developer = (obj && obj.developer) || '';
-    this.relase_date = (obj && obj.relase_date) || '';
+    this.relaseDate = (obj && obj.relaseDate) || '';
     this.finished = (obj && obj.finished) || false;
   }
 
@@ -21,7 +21,7 @@ export class Console {
     return this.id;
   }
   getName(): String {
-    return this.name;
+    return this.consoleName;
   }
   isFinished(): boolean {
     return this.finished;
@@ -42,6 +42,6 @@ export class Console {
   }
 
   getRelase_date(): String {
-    return this.relase_date;
+    return this.relaseDate;
   }
 }
